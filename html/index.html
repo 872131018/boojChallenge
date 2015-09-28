@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<title>Booj Challenge</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<h1>Welcome to the Booj Challenge!</h1>
+	<h3>Question 1</h3>
 	<label for='stringToSearch'>Type a string to search here -></label>
 	<input type="text" name="stringToSearch" id='stringToSearch'>
 	<label for='subString'>Put a string to search for here -></label> 
 	<input type="text" name="subString" id='subString'>
 	<input type="button" value="Find it!" id='subStringSearchStart'>
 	<span id='messageCenter'></span>
+
+	<h3>Question 2</h3>
+	<label for='arrayToEqualize'>Input a CSV to create an array from-></label>
+	<input type="text" name="arrayToEqualize" id='arrayToEqualize'>
+	<input type="button" value="Get Equilibrium Indices!" id='equalizeStart'>
+	<span id='messageCenter2'></span>
+
+	<h3>Question 3</h3>
+	<label for='arrayToSort'>Input a CSV to create an array from-></label>
+	<input type="text" name="arrayToSort" id='arrayToSort'>
+	<input type="button" value="Get Distinct Values!" id='distinctValuesStart'>
+	<span id='messageCenter3'></span>
 
 	<!-- load the page scripts -->
 	<script src="../js/indexScripts.js"></script>
